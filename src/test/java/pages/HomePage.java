@@ -30,13 +30,13 @@ public class HomePage extends BasePage {
     @FindBy(how = How.XPATH, using = "//h5[text()='Book Store Application']")
     protected WebElement bookStore;
 
-    public void enterWebSite(String url){
-        navigate(url);
-    }
 
-    public void chooseElements(){
+    public void chooseElements(String url){
+        navigate(url);
         click(elements);
     }
+
+
 
 
 }
